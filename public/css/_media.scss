@@ -1,0 +1,259 @@
+// @media screen and(max-width:1200px){
+//   html{
+//     font-size:10px;
+//   }
+// }
+@media screen and (max-width:1400px){
+  .header-content .right-header{
+    padding-right:0;
+  }
+  .about-container{
+    .left-about{
+      padding-right: 0;
+    }
+  }
+  .portfolios {
+    grid-template-columns: 1fr 1fr;
+    }
+  
+    .blog-items {
+      grid-template-columns: 1fr 1fr;
+    }
+.contact-content-con {
+    flex-direction: column;
+    
+    .right-contact {
+      margin-left: 0;
+      margin-top: 2.5rem;
+    }
+  }
+  
+  .contact-content-con .right-contact .i-c-2 {
+    flex-direction: column;
+  }
+  
+  .contact-content-con .right-contact .i-c-2 :last-child {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+  .section{
+    padding: 3rem 6rem;
+  }
+  .main-title{
+    .bg-text{
+      font-size:4.5rem !important;
+    }
+  }
+}
+@media screen and (max-width:968px){
+  .header-content{
+    grid-template-columns: repeat(1, 1fr);
+    .right-header{
+      grid-row: 1;
+      padding-right:0;
+    }
+  }
+  .about-container{
+    grid-template-columns: repeat(1,1fr);
+    .right-about{
+      margin-top:1.5rem;
+    }
+  }
+    .about-stats .progress-bars {
+      grid-template-columns: repeat(1, 1fr);
+      fieldset{
+        padding:1rem 3.5rem;
+      }
+    }
+    .timeline{
+      grid-template-columns: repeat(1,1fr);
+      .timeline-item{
+        margin:1.5rem 0;
+      }
+    }
+  .portfolios{
+    grid-template-columns: 1fr ;
+    place-items:center;
+    .portfolio-item{
+      width:510px;
+    }
+  }
+  .blog-items{
+    grid-template-columns: 1fr;
+    place-items: center;
+    
+      .blog {
+        width: 510px;
+      }
+  }
+    .section {
+      padding: 3rem 6rem;
+    }
+        .theme-btn {
+          width: 50px;
+          height: 50px;
+        }
+        .main-title h2{
+          font-size:3.5rem;
+.bg-text {
+    font-size: 3.5rem;
+  }
+        }
+  
+}
+@media screen and (max-width:698px){
+  html{
+    font-size: 14px;
+  }
+  header{
+    padding:0;
+  }
+  header .right-header{
+    padding:2rem !important;
+  }
+  .theme-btn{
+    width: 50px;
+    height: 50px;
+  }
+  .header-content{
+    grid-template-columns: 1fr;
+    padding-bottom:6rem;
+  }
+  .left-header{
+    .h-shape{
+      display: none;
+    }
+  }
+  .right-header{
+    grid-row:1;
+    width:90%;
+    margin: 0 auto;
+    .name{
+      font-size:2.5rem !important;
+    }
+  }
+
+  .header-content .left-header .image{
+    margin: 0 auto;
+    width: 90%;
+  }
+  .about-container{
+    grid-template-columns: 1fr;
+    .right-about{
+      grid-template-columns: 1fr;
+      
+    }
+    .left-about{
+      padding-right: 0;
+      p{
+        padding-left: 0;
+      }
+    }
+  }
+  .timeline{
+    
+    padding-bottom: 6rem;
+  }
+ 
+  .portfolios{
+    padding-bottom: 6rem;
+    .portfolio-item {
+        width: 410px;
+      }
+  }
+  .blog-items{
+    padding-bottom: 6rem;
+    .blog {
+        width: 410px;
+      }
+  }
+    .about-stats .progress-bars fieldset {
+      padding: 1rem 2.5rem;
+    }
+    .extra-footer {
+      width: auto;
+      height: 100px;
+    }
+  .section{
+    padding:2rem 2.5rem;
+  }
+  .btn-con{
+    width: 100%;
+    .main-btn{
+      width:100%;
+      padding:1rem .5rem;
+      justify-content: center;
+      & :last-child{
+        display: none;
+      }
+    }
+  }
+  .main-title{
+    h2{
+      font-size: 3rem;
+      .bg-text{
+        font-size: 3.5rem;
+        // letter-spacing: 10px;
+        line-height: 1;
+      }
+    }
+  }
+  .controls{
+    top:auto;
+    bottom:0;
+    flex-direction:row;
+    justify-content: space-around;
+    // align-items: space-around;
+    left:50%;
+    transform:translatex(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+    .control{
+      margin: 1rem .3rem;
+    }
+  }
+}
+@media screen and (max-width:450px){
+  html{
+    font-size:12px;
+  }
+    header .right-header {
+      padding: 1rem !important;
+    }
+        .timeline .timeline-item .tl-icon{
+          // margin:0 1rem;
+          left:-20px;
+        }
+        .about-stats .progress-bars fieldset{
+          padding:1rem 2.5rem;
+        }
+                    .portfolios {
+                      
+          
+                      .portfolio-item {
+                        width: 310px;
+                      }
+                    }
+          
+                    .blog-items {
+                     
+          
+                      .blog {
+                        width:310px;
+                      }
+                    }
+  .section{
+    padding: 2rem 2.5rem;
+  }
+    .main-title {
+      h2 {
+        font-size: 2.5rem;
+  
+        .bg-text {
+          font-size: 3rem;
+          // letter-spacing: 10px;
+          line-height: 1;
+        }
+      }
+    }
+}
