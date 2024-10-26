@@ -15,15 +15,25 @@ class PDFController extends Controller
         ]);
         
         // Log the HTML content for debugging
-        Log::info('output: ', ["gettype"=>$validate["htmlContent"]]);
+        Log::info('output: ', ["fonts path"=>public_path("Poppins"),"gettype"=>$validate["htmlContent"]]);
         
         try {
             // Create an instance of mPDF
-            $mpdf = new Mpdf();
+            $mpdf = new Mpdf([
+                'mode' => 'utf-8',
+                'format' => 'A4',
+                'default_font_size' => 12,
+                'default_font' => 'arial',
+                // 'margin_left' => 10,
+                // 'margin_right' => 10,
+                // 'margin_top' => 10,
+                // 'margin_bottom' => 10,
+                ]);
             
             // Write the HTML content to the PDF
-            // $mpdf->WriteHTML($validate["htmlContent"]);
-            $mpdf->WriteHTML("<h1>hello aryan</h1>");
+            $mpdf->WriteHTML(file_get_contents(public_path('css/style.css')), \Mpdf\HTMLParserMode::HEADER_CSS);
+            $mpdf->WriteHTML($validate["htmlContent"]);
+            // $mpdf->WriteHTML("<h1>hello aryan</h1>");
             
             // Output the PDF as a download
             return response()->stream(function() use ($mpdf) {
