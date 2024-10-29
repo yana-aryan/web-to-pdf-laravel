@@ -11,8 +11,8 @@ $align_left = "left";
 $align_right="right";
 $red = "red";
 $grey = "grey";
-$bigger = "1em";
-$biggest = "1.2em";
+$bigger = ".8em";
+$biggest = "1em";
 $smaller = ".8em";
 $body_max_width="1000px";
 $body_width="100vw";
@@ -30,12 +30,13 @@ $bolder = "bold";
         <tr>
             <td style="width: 50%;text-align:{{$align_left}};">
                 <p style="color:{{$red}};">Invoice To</p>
-                
                 <p style="font-size:{{$smaller}};color:{{$grey}};">Invoice Number INV-2024-1234</p>
                 <p style="font-size:{{$smaller}};color:{{$grey}};">
                     Invoice date 22 OCT 2024
                 </p>
+                {{-- cannot set padding bottom --}}
                 <p style="">ARYAN KHANDELWAL</p>
+                <p style="font-size:{{$smaller}};color:{{$grey}};">7073681121</p>
             </td>
             <td style="width: 50%;text-align:{{$align_right}};">
                 <p style="color: {{$red}};">Invoice From</p>
@@ -87,7 +88,7 @@ $bolder = "bold";
             <tr id="four-row">
                 <td></td>
                 <td></td>
-                <td style="font-size:{{$bigger}};color:{{$bigger_black}}">Sub total</td>
+                <td style="font-size:{{$bigger}};color:{{$bigger_black}};">Sub total</td>
                 <td></td>
                 <td></td>
                 <td style="font-size:{{$bigger}};color:{{$bigger_black}}">$19.00</td>
@@ -116,14 +117,14 @@ $bolder = "bold";
             <td>TAXABLE VALUE</td>
             <td>CGST</td>
             <td>SGST</td>
-            <td>AMOUNT</td>
+            <td style="text-align:{{$align_right}}">AMOUNT</td>
         </tr>
         <tr>
             <td>5%</td>
             <td>$202</td>
             <td>$50</td>
             <td>$50</td>
-            <td>$2022</td>
+            <td style="text-align:{{$align_right}}">$2022</td>
         </tr>
     </table>
     <br>
