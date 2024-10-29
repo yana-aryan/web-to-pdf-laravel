@@ -14,7 +14,6 @@ $grey = "grey";
 $bigger = "1em";
 $biggest = "1.2em";
 $smaller = ".8em";
-$header_color="grey";
 $body_max_width="1000px";
 $body_width="100vw";
 $body_min_width="700px";
@@ -31,7 +30,7 @@ $bolder = "bold";
         <tr>
             <td style="width: 50%;text-align:{{$align_left}};">
                 <p style="color:{{$red}};">Invoice To</p>
-                <br>
+                
                 <p style="font-size:{{$smaller}};color:{{$grey}};">Invoice Number INV-2024-1234</p>
                 <p style="font-size:{{$smaller}};color:{{$grey}};">
                     Invoice date 22 OCT 2024
@@ -39,7 +38,7 @@ $bolder = "bold";
                 <p style="">ARYAN KHANDELWAL</p>
             </td>
             <td style="width: 50%;text-align:{{$align_right}};">
-                <p style="color: {{$red}};">Invoice From</p><br>
+                <p style="color: {{$red}};">Invoice From</p>
                 <p>YANA TECHNOLOGY PVT</p>
                 <p style="font-size:{{$smaller}};color:{{$grey}};">Near ITI Circle Jodhpur Rajasthan 342003</p>
                 <p style="font-size:{{$smaller}};color:{{$grey}};">www.yana.com</p>
@@ -66,7 +65,7 @@ $bolder = "bold";
                 <td>$10.00</td>
                 <td>2</td>
                 <td>5% ($25)</td>
-                <td>$19.00</td>
+                <td style="font-weight:{{$bolder}}">$19.00</td>
             </tr>
             <tr>
                 <td>1</td>
@@ -74,7 +73,7 @@ $bolder = "bold";
                 <td>$10.00</td>
                 <td>2</td>
                 <td>5% ($25)</td>
-                <td>$19.00</td>
+                <td style="font-weight:{{$bolder}}">$19.00</td>
             </tr>
             <tr>
                 <td>1</td>
@@ -82,7 +81,7 @@ $bolder = "bold";
                 <td>$10.00</td>
                 <td>2</td>
                 <td>5% ($25)</td>
-                <td>$19.00</td>
+                <td style="font-weight:{{$bolder}}">$19.00</td>
             </tr>
 
             <tr id="four-row">
